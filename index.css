@@ -1,0 +1,416 @@
+/*=================================
+ОБЩЕЕ
+==================================*/
+
+body {
+	margin: 0;
+	font-family: Oswald, sans-serif
+}
+a {
+	target:_blank;
+	text-decoration: none;
+}
+* {
+box-sizing: border-box;
+}
+
+.bordur {
+	border-left: 2px solid red;
+			
+}	
+.small a, p a, {
+	text-decoration-color: none !important;
+}
+/*=================================
+ЗАГОЛОВОК ДОКУМЕНТА
+==================================*/				
+
+#zag {
+	position: fixed;
+	width: 100%;
+	height: 90px;
+	background-color: #000000;
+	color: #FFF;
+	border-bottom: 2px solid #FF0000;
+	/* box-sizing: border-box;	 */
+	
+}
+
+#zag div {
+	/* box-sizing: border-box;	 */
+	/* background-color: #000000; */
+	float: left;
+	
+}
+
+#zag div img {
+	object-fit: contain;
+	padding: 3px 0px 3px 40px;
+	height: 90px;
+	position: fixed;
+	
+} 	
+#zag ul {
+	font-size:	20px;
+	font-weight: 500;
+	text-align: end;
+	margin: 0;
+	background-color: #000000;
+	float: right;
+	
+}
+				
+#zag ul li {
+	display: inline-block;
+	margin-right: 100px;
+	padding: 14px;
+	
+}
+
+#zag ul li span {
+	margin-right: 270px;
+	font-size:	22px;
+	font-stretch: ultra-expanded;
+	padding: 14px;
+	color: #FF0000;
+	
+	text-align: start;
+}
+
+#zag ul li a:hover{
+	text-decoration: underline;
+	color: #FF0000;
+}
+#zag ul li a {
+	color: #FFF;
+}
+/*=================================
+ОЧИСТКА 
+==================================*/
+#zag::before,
+#zag::after {
+	content: '';
+	display: table;
+}
+#zag::after {
+	clear: both;
+}
+#zag {
+	clear: both;
+}
+
+/*=================================
+ПОДЛОЖКА ПЕРВАЯ
+==================================*/	
+section {
+	/* color: black; */
+	flex-direction: row;
+	display: flex;
+	width: 100%;
+}	
+.privet {
+	min-height: calc(56vh);
+	background: #000000;
+}
+.small-privet {
+	min-height: calc(37vh);
+	background: #E0FFFF;
+	background: -webkit-linear-gradient(#E0FFFF, #FFFAF0, #00FFFF);
+	background: -moz-linear-gradient(#E0FFFF, #FFFAF0, #00FFFF);
+	background: linear-gradient(#E0FFFF, #FFFAF0, #00FFFF);
+}
+
+.firstLesson, .secondLesson {
+	min-height: calc(80vh);
+	background-image: url('fox-pencil-2.png');
+	background-repeat: no-repeat;
+	background-origin: border-box;
+	background-size: 100% contain;
+	background-position-x: 50%; 
+}
+/*=========================================
+ПОДЛОЖКА ВТОРАЯ
+=======================================*/			
+		.decor {
+			flex: 0 0 4vw;
+		}
+		.content {
+			flex: 0 0 81vw;
+			font-size: 24px;
+			font-family: Oswald;
+			color: #00BFFF;
+			
+		}
+		.dop-nav {
+			flex: 0 0 15vw;
+			background-color: #000000; 
+			/* background: #7FFFD4; */
+			/* background: -webkit-linear-gradient(to right, #7FFFD4, #4682B4); */
+			/* background: -moz-linear-gradient(to right, #7FFFD4, #4682B4); */
+			/* background: linear-gradient(to right, #7FFFD4, #4682B4); */
+		}	
+
+			
+/*=========================================
+ПРИВЕТСТВИЕ-ВВОДНАЯ ЧАСТЬ
+=======================================*/
+		.content p {
+			margin: 0;
+			padding: 10px 20px 5px 10px;
+			text-indent: 30px;
+		}
+		p.otstup-sverxu {
+			padding-top: 140px;
+		}
+		.content p::before {
+			content: "Ҩ";
+			font-size: 28px;
+			padding-right: 10px;
+		}
+		.content a {
+			display: block;
+			padding: 30px 20px 5px 10px;
+			text-align: end;
+			text-decoration: none;
+			
+		}
+		
+		.content a:hover {
+			font-weight: 600;
+			color: #FF0000
+			/* mix-blend-mode: hard-light; */
+		}
+			
+		
+		img.rech {
+				width: 350px;
+				display: block;
+				position: fixed;
+				top: 6em;
+				right: 136,1%;
+				
+		}
+		.scale {
+				transition: 1s; 
+		}
+		.scale:hover {
+				transform: scale(2); 
+		}
+		.svetB {
+			background-color: #000000;
+		}
+/*=========================================
+ПРИВЕТСТВИЕ-ГЛАВНОЕ МЕНЮ
+=======================================*/			
+.glav-nav {
+	width: 100%;
+	min-height: calc(7vh);
+	background-color: #000000;
+	padding-left: 5%;
+	display: flex;
+	position: sticky:
+	top: 60px;
+}
+.glav-nav span {
+	font-size: 2em;
+	line-height: 2.5em;
+	margin: 0 205px 0 20px;
+	padding: 0 15px 0 15px;
+	text-decoration: underline;
+	color: red;
+}
+.glav-nav span::before {
+	content: ''; 
+    top: 0; left: 0; right: 0; bottom: 0; 
+    position: relative; 	
+}
+/*div.small {
+	flex: 0 0 15vw;
+	height: calc(8vh);
+	background: #E0FFFF;
+	background: -webkit-linear-gradient(#E0FFFF, #FFFAF0, #00FFFF);
+	background: -moz-linear-gradient(#E0FFFF, #FFFAF0, #00FFFF);
+	background: linear-gradient(#E0FFFF, #FFFAF0, #00FFFF);
+	border: 2px solid #FF0000;
+	text-align: center;
+	font-size: 25px;
+	padding-top: 1%;
+	color: #FF0000;
+}
+div.veshalka {
+	display: flex;
+	min-height: calc(8vh);
+	background-color: #000000;
+	justify-content: space-around;
+	align-items: center;
+	flex: 0 0 85vw;
+	
+}
+*/
+.glav-nav a:hover {
+	font-weight: 600;
+	color: #FF0000
+}
+/*=========================================
+ПРИВЕТСТВИЕ-ОКОНЧАНИЕ
+=======================================*/	
+/* .kotik { */
+	/* background-image: url('cat-1775543_640.png') */
+	/* background-repeat: no-repeat; */
+	/* background-origin: border-box; */
+	/* background-size: 50% 79% cover; */
+	/* background-position-x: 80%; */
+	
+/* } */
+.koshak {
+	display: block;
+	position: absolute;
+	width: 15em;
+	object-fit: cover;
+	right: 1em;
+	
+}
+	
+	
+.svetA {
+	background: #E0FFFF;
+	background: -webkit-linear-gradient(#E0FFFF, #FFFAF0, #00FFFF);
+	background: -moz-linear-gradient(#E0FFFF, #FFFAF0, #00FFFF);
+	background: linear-gradient(#E0FFFF, #FFFAF0, #00FFFF);
+}
+	
+/*=========================================
+УРОК 1 И 2
+=======================================*/	
+.firstLesson h1,
+.secondLesson h1 {
+	margin: 100px;
+}
+/*=========================================
+МЕНЮ ВЫБОРА ПЕРЕД УРОКАМИ
+=======================================*/
+.menu, .menu ul { 
+    list-style: none; margin: 0; padding: 0;
+}
+.menu {
+    background: linear-gradient(to bottom, #00FFFF, #7FFFD4); 
+    border: 3px solid #00FFFF; 
+    padding: 0 5px; 
+    font: 16px Arial, sans-serif; 
+}
+.menu > li {
+    display: inline-block; 
+    border-right: 3px solid #00FFFF; 
+    position: relative; 
+ }
+.menu a {
+    text-decoration: none; 
+    color: #4682B4; 
+    display: block; 
+ }
+.menu > li > a {
+    padding: 10px 15px; 
+    border-right: 3px solid #00FFFF; 
+    position: relative; z-index: 3; 
+}
+.menu ul {
+    position: absolute; 
+    display: none; 
+    width: 200px; 
+    background: #87CEFA; 
+ }
+.menu ul a {
+    padding: 5px 10px;
+}
+.menu ul a:hover {
+    background: #7FFFD4; 
+    color: #4682B4; 
+ }
+.menu li:hover ul {
+    display: block; 
+ }
+.menu > li:hover::before {
+    content: ''; 
+    top: 0; left: 0; right: 0; bottom: 0; 
+    position: absolute; 
+}
+.menu > li:hover > a {
+    background: #7FFFD4; 
+}
+.svetC {
+	background: #00FFFF;
+}
+/*=========================================
+ПОДВАЛ
+=======================================*/
+	#footer {
+	position: fixed;
+	width: 100%;
+	background-color: #000000;
+	color: #FFF;
+	top: 52.5em;
+	/* box-sizing: border-box;	 */
+	
+}
+
+#footer div {
+	/* box-sizing: border-box;	 */
+	background-color: #000000;
+	float: left;
+	
+}
+#footer div img {
+	object-fit: contain;
+	padding: 3px 0px 3px 40px;
+	height: 55px;
+	position: fixed;
+	right: 111em;
+} 	
+#footer ul {
+	font-size:	16px;
+	font-weight: 300;
+	text-align: end;
+	margin: 0;
+	background-color: #000000;
+	float: right;
+	
+}
+				
+#footer ul li {
+	display: inline-block;
+	margin-right: 100px;
+	padding: 14px;
+	
+}
+
+#footer ul li span {
+	margin-right: 270px;
+	font-size:	22px;
+	padding: 18px;
+	color: #FF0000;
+	text-align: start;
+}
+
+#footer ul li a:hover{
+	text-decoration: underline;
+	color: #FF0000;
+}
+#footer ul li a {
+	color: #FFF;
+}
+/*=================================
+ОЧИСТКА 
+==================================*/
+#footer::before,
+#footer::after {
+	content: '';
+	display: table;
+}
+#footer::after {
+	clear: both;
+}
+#footer {
+	clear: both;
+}
+
+/* #FF0000 КРАСНЫЙ  #7FFFD4 МОРСКАЯ ВОЛНА #00FFFF ВОДА #AFEEEE ТУРКОСА #FF6347 ТОМАТНЫЙ #000000*/

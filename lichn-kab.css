@@ -1,0 +1,259 @@
+/*=================================
+ОБЩЕЕ
+==================================*/
+
+body {
+	margin: 0;
+	font-family: Oswald, sans-serif;
+	background: url('garden.png') 40% 110% no-repeat;
+}
+a {
+	target:_blank;
+	text-decoration: none;
+}
+* {
+box-sizing: border-box;
+}
+
+/*=================================
+ЗАГОЛОВОК ДОКУМЕНТА
+==================================*/				
+
+#zag {
+	position: fixed;
+	width: 100%;
+	height: 90px;
+	background-color: #000000;
+	color: #FFF;
+	box-sizing: border-box;
+	top: 0;
+	
+}
+
+#zag div {
+	box-sizing: border-box;	
+	background-color: #000000;
+	float: left;
+	
+}
+
+#zag div img {
+	object-fit: contain;
+	padding: 3px 0px 3px 40px;
+	height: 90px;
+	position: fixed;
+	
+} 	
+#zag ul {
+	font-size:	20px;
+	font-weight: 500;
+	text-align: end;
+	margin: 0;
+	background-color: #000000;
+	float: right;
+	
+}
+				
+#zag ul li {
+	display: inline-block;
+	margin-right: 100px;
+	padding: 14px;
+	
+}
+
+#zag ul li span {
+	margin-right: 270px;
+	font-size:	22px;
+	font-stretch: ultra-expanded;
+	padding: 14px;
+	color: #FF0000;
+	
+	text-align: start;
+}
+
+#zag ul li a:hover{
+	text-decoration: underline;
+	color: #FF0000;
+}
+#zag ul li a {
+	color: #FFF;
+}
+/*=================================
+ОЧИСТКА 
+==================================*/
+#zag::before,
+#zag::after {
+	content: '';
+	display: table;
+}
+#zag::after {
+	clear: both;
+}
+#zag {
+	clear: both;
+}
+
+form::before,
+form::after {
+	content: '';
+	display: table;
+}
+form::after {
+	clear: both;
+}
+form {
+	clear: both;
+}
+
+
+/*=================================
+ПРИВЕТСТВИЕ
+==================================*/
+h1 {
+	position: absolute;
+	top: 35%;
+	left: 60%;
+	color: #7FFFD4;
+	
+}
+
+/*=================================
+ФОРМА
+==================================*/				
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+form {
+  border: 2px solid #00BFFF;
+  border-radius: 5px;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  width: 240px;
+  margin: 250px auto;
+  /* background-color: steelblue; */
+  background:url('yellow-wall-6243164_640.png') 50% no-repeat;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+input {
+  border-radius: 5px;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+.account-info {
+  padding: 20px 20px 0 20px;
+}
+.account-info label {
+  color: #395870;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.account-info input {
+  background: #fff;
+  border: 1px solid #00BFFF;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+  color: #636466;
+  padding: 6px;
+  margin-top: 6px;
+  width: 100%;
+}
+.account-action {
+  background: #f0f0f2;
+  border-top: 1px solid #c6c7cc;
+  padding: 20px;
+}
+.account-action .btn {
+  background: linear-gradient(#49708f, #293f50);
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  float: left;
+  padding: 8px 16px;
+}
+.account-action label {
+  color: #7c7c80;
+  font-size: 12px;
+  float: left;
+  margin: 10px 0 0 20px;
+}
+
+/*=========================================
+ПОДВАЛ
+=======================================*/
+	#footer {
+	position: fixed;
+	width: 100%;
+	height: 6%;
+	background-color: #000000;
+	color: #FFF;
+	top: 53.4em;
+	/* box-sizing: border-box;	 */
+	
+}
+
+#footer div {
+	/* box-sizing: border-box;	 */
+	background-color: #000000;
+	float: left;
+	
+}
+#footer div img {
+	object-fit: contain;
+	padding: 3px 0px 3px 40px;
+	height: 55px;
+	position: fixed;
+	right: 113em;
+} 	
+#footer ul {
+	font-size:	16px;
+	font-weight: 300;
+	text-align: end;
+	margin: 0;
+	background-color: #000000;
+	float: right;
+	
+}
+				
+#footer ul li {
+	display: inline-block;
+	margin-right: 100px;
+	padding: 14px;
+	
+}
+
+#footer ul li span {
+	margin-right: 270px;
+	font-size:	22px;
+	padding: 18px;
+	color: #FF0000;
+	text-align: start;
+}
+
+#footer ul li a:hover{
+	text-decoration: underline;
+	color: #FF0000;
+}
+#footer ul li a {
+	color: #FFF;
+}
+/*=================================
+ОЧИСТКА 
+==================================*/
+#footer::before,
+#footer::after {
+	content: '';
+	display: table;
+}
+#footer::after {
+	clear: both;
+}
+#footer {
+	clear: both;
+}
